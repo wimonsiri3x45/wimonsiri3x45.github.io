@@ -1,0 +1,30 @@
+/* #Contact */
+
+.contact-container{
+    max-width: 25rem;
+    border: 3px solid var(--black);
+    padding: 24px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    box-shadow: 10px 10px var(--blue);
+}
+.contact h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.email,.visit,.phone{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.email p,.visit p,.phone p{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+

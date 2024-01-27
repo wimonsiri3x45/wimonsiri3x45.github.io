@@ -1,0 +1,135 @@
+/* #media.css */
+
+/* Max-Width(1024px) */
+@media (max-width:1024px) {
+    /* About */
+    .about-container{
+        gap: 30px;
+    }
+    .basic-edu{
+        gap: 20px;
+    }
+
+    /* skills */
+    .skills-container{
+        gap: 30px;
+    }
+    
+    /* skills */
+    .skills-container{
+        gap: 30px;
+    }
+}
+
+/* Max-Width(991px) */
+@media (max-width:991px) {
+    /* Nav */
+    .logo{
+        display: none;
+    }
+    .nav-links{
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* skills */
+    .skils-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Max-Width(768px) */
+@media (max-width:768px) {
+    h1{
+        font-size: 50px ;
+    }
+    h2{
+        font-size: 26px ;
+    }
+    h3{
+        font-size: 24px ;
+    }
+    a{
+        font-size: 20px ;
+    }
+    .arrow{
+        right: 5%;
+    }
+
+    /* Header */
+    .header-conrainer{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+    .header{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .header h1{
+        font-size: 80px ;
+    }
+
+     /* About */
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+    .about-left{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .basic-edu{
+        gap: 10px;
+    }
+
+    /* skills */
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+    .skills-box{
+        padding: 10px;
+    }
+    .ex-div{
+        gap: 10px;
+    }
+}
+
+/* Max-Width(600px) */
+@media (max-width:600px) {
+    a{
+        font-size: 20px;
+    }
+    .header h1{
+        font-size: 60px;
+    }
+    span{
+        font-size: 30px;
+    }
+    /* Nav */
+    .nav-links{
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    /* Contact*/
+    .contact-container{
+        flex-direction: column;
+    }
+
+    /* Footer*/
+    footer{
+        padding: 0;
+        padding-bottom: 20px;
+        width: 100%;
+        margin: auto;
+        margin-top: 9rem;
+    }
+    footer .nav-links{
+        width: 100%;
+        justify-content: center;
+    }
+}

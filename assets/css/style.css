@@ -1,0 +1,348 @@
+/* #style.css */
+
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand'); 
+/*font-family: 'Gochi Hand', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* LOGO : font-family: 'Pacifico', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+/* font-family: 'Patrick Hand', cursive;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gochi Hand', cursive;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    letter-spacing: 0.4px;
+}
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --black: #000000;
+    --white: #ffffff;
+    --dark: #201d25;
+    --dark-variant: #444b54;
+    --blue: #bfdeef;
+    --dark-blue: #467fab;
+    --nude:#f7eedd;
+    --pink:#fcdac5;
+    --yellow:#ffdaa4;
+    --green:#e2dc7d;
+
+    /* shadow */
+    --shadow: 0 2px 2px hsla(0, 0%, 22%, 0.08);
+
+    /* transition */
+    --transition-1: 0.4s ease;
+    --transition-2: 0.25s ease;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 120% ;
+}
+h1{
+    font-family: 'Gochi Hand', cursive;;
+    font-size: 60px;
+    color: var(--dark-blue);
+    text-shadow: 5px 5px var(--nude);
+}
+h2{
+    font-size: 28px;
+    color: var(--yellow);
+}
+h3{
+    font-size: 26px;
+    color: var(--black);
+}
+h4{
+    font-size: 19px;
+    color: var(--black);
+}
+h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Gochi Hand', cursive;
+    color: var(--dark-blue);
+    text-shadow: 5px 5px var(--nude);
+}
+p{
+    font-size: 24px;
+    line-height: 140%;
+    color: var(--yellow);
+}
+.heading-p{
+    padding-top: 8rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+a{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-decoration-color: var(--white);
+    transition: var(--transition-1);
+}
+a:hover{
+    color: var(--yellow);
+    text-underline-offset: 1rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--dark-blue);
+}
+.btn{
+    display: inline-block;
+    width: fit-content;
+    padding: 0.5rem;
+    width: 7rem;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    cursor: pointer;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-1);
+    box-shadow: 5px 5px var(--blue);
+    text-transform: uppercase;
+    margin-left: 1rem;
+    
+}
+.btn:hover{
+    background: var(--yellow);
+    color: var(--white);
+    text-decoration: none !important;
+    box-shadow: 5px 5px var(--white);
+}
+.btn-dark{
+    color: var(--dark-blue);
+    background: var(--yellow);
+    font-family: 'Patrick Hand', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none !important;
+    box-shadow: 5px 5px var(--dark-blue);
+}
+.btn-dark:hover{
+    background: var(--dark-blue);
+    box-shadow: 5px 5px var(--white);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.icon1{
+    width: 50px;
+    height: max-content;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+/* Nav Bar */
+nav{
+    height: 6rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: var(--white);
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo{
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-decoration: none !important;
+    text-shadow: 3px 3px var(--blue);
+}
+.logo:hover{
+    color: none;
+    text-shadow: 3px 3px var(--white);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links .active{
+    color: var(--yellow);
+}
+
+/* Header Section */
+header{
+    padding: 14px;
+    margin-top: 128px;
+}
+.header-conrainer{
+    display: grid;
+    max-width: 800px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.header{
+    text-align: center;
+    margin: auto;
+}
+.header h1{
+    font-size: 90px;
+}
+.header p,b{
+    color: var(--yellow);
+    font-size: 30px;
+}
+span{
+    font-family: 'Patrick Hand', cursive;
+    color: var(--dark-blue);
+    margin-top: .4rem;
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+.header-action-aria{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.header-social{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+/* About Section */
+.about-container{
+    display: grid;
+    grid-template-columns: 38% auto;
+    gap: 4rem;
+    margin-bottom: 5rem;
+}
+.about-left{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.about-right{
+    margin-top: 2rem;
+    text-align: center;
+}
+.about-right p{
+    color: var(--dark-blue);
+    font-size: 24px;
+}
+.edu-box{
+    padding: 20px;
+    border: 3px solid var(--black);
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 10px 10px var(--blue);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.edu-box h2{
+    font-weight: 600;
+    color: var(--dark-blue);
+    text-shadow: 5px 5px var(--nude);
+}
+.edu-box p{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--yellow);
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Section */
+section{
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    right: 3%;
+    transition: var(--transition);
+}
+.arrow:hover{
+    margin-top: .5rem;
+}
+
+/* Skills Section */
+.skils-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+.skills-box{
+    margin-top: 20px;
+    border: 3px solid var(--black);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 10px 10px var(--blue);
+    background-color: var(--white);
+}
+.skills-box h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+    font-size: 30px;
+    text-shadow: 3px 3px var(--nude);
+}
+.skills-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.skills-div{
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.skills-div h4{
+    font-size: 20px;
+    font-family: 'Patrick Hand', cursive;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--nude);
+    justify-content: center;
+}
+footer img{
+    margin:center;
+}
+footer .nav-links{
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
